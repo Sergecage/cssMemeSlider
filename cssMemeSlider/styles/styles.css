@@ -97,7 +97,7 @@ a:active .anchor{
 	}
 
 	.slider{
-		left: 10rem;
+		margin-left: 10rem;
 	}
 	.slider a{
 		width: 1.5rem;
