@@ -19,20 +19,21 @@ main{
 .container{
 	position: relative;
 	max-width: 100rem;
-	margin: 0 5% 15% 5%;
+	margin: 0 auto;
+}
+
+.image-slider{
 	display: flex;
 	overflow: auto;
 	scroll-snap-type: x mandatory;
 	scroll-behavior: smooth;
 	gap: 2%;
-	scrollbar-width: none;
 }
 
 .item{
 	border-radius: 0.5rem;
 	flex: 1 0 100%;
-	scroll-snap-align: start;
-	object-fit: cover;
+	
 }
 
 img{
@@ -54,22 +55,22 @@ h3{
 	column-gap: 1rem;
 	position: absolute;
 	bottom: 1.25rem;
-	left: 50%;
+	left: 95%;
 	transform: translateX(-50%);
-	z-index: 2;
-	top: 800px;
+	z-index: 1;
+	top: 840px;
 	height: 2.5rem;
 	
 }
 
-a{
-	width: 2.5rem;
-	height: 2.5rem;
+.slider a{
+	width: 1.5rem;
+	height: 1.5rem;
 	border-radius: 50%;
-	color: #ffffff;
+	border: 1px solid #3a7cc7;
 }
 
-hover:a{
+a:hover{
 	background-color: #3a7cc7;
 	cursor: pointer;
 }
