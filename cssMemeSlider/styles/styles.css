@@ -33,12 +33,11 @@ main{
 .item{
 	border-radius: 0.5rem;
 	flex: 1 0 100%;
-	
 }
 
 img{
 	border-radius: 0.5rem;
-	width: 1600px;
+	width: 100rem;
 	height: 40%;
 }
 
@@ -47,7 +46,6 @@ h3{
 	color: aliceblue;
 	margin-top: 1.5rem;
 	font-weight: 200;
-
 }
 
 .slider {
@@ -58,19 +56,56 @@ h3{
 	left: 95%;
 	transform: translateX(-50%);
 	z-index: 1;
-	top: 840px;
-	height: 2.5rem;
-	
+	top: 42%;	
 }
 
-.slider a{
+.slider a {
+	width: 2.5rem;
+	height: 2.5rem;
+}
+
+.slider .anchor{
 	width: 1.5rem;
 	height: 1.5rem;
 	border-radius: 50%;
 	border: 1px solid #3a7cc7;
+	display: block;
+	background-color: #3a7cc7;
+}
+
+.anchor:hover{
+	cursor: pointer;
+	background-color: #3a7cc7;
 }
 
 a:hover{
-	background-color: #3a7cc7;
 	cursor: pointer;
+}
+
+a:active .anchor{
+	background-color: transparent;
+}
+
+@media  screen and (max-width: 400px ) {
+
+	img{
+		width: 16rem;
+	}
+
+	h3{
+		font-size: 1.2rem;
+		margin-top: 2.8rem;
+	}
+
+	.slider{
+		left: 10rem;
+	}
+	.slider a{
+		width: 1.5rem;
+		height: 1.5rem;
+	}
+	.slider .anchor{
+		width: 0.8rem;
+		height: 0.8rem;
+	}
 }
