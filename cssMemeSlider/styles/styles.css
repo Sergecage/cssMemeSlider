@@ -1,0 +1,106 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+
+body{
+	background: #232030;
+}
+
+main{
+	padding: 2rem;
+}
+.container{
+	position: relative;
+	max-width: 100rem;
+	margin: 0 auto;
+}
+
+.image-slider{
+	display: flex;
+	overflow: auto;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+	gap: 2%;
+}
+
+.item{
+	border-radius: 0.5rem;
+	flex: 1 0 100%;
+}
+
+img{
+	border-radius: 0.5rem;
+	width: 100rem;
+	height: 40%;
+}
+
+h3{
+	font-size: 2.5rem;
+	color: aliceblue;
+	margin-top: 1.5rem;
+	font-weight: 200;
+}
+
+.slider {
+	display: flex;
+	column-gap: 1.5rem;
+	position: relative;
+	bottom: 1.25rem;
+	margin-left: 93%;
+	transform: translateX(-50%);
+	margin-top: -72%;	
+}
+
+.slider a {
+	width: 2.5rem;
+	height: 2.5rem;
+}
+
+.slider .anchor{
+	width: 1.5rem;
+	height: 1.5rem;
+	border-radius: 50%;
+	border: 1px solid #3a7cc7;
+	display: block;
+	background-color: #3a7cc7;
+}
+
+.anchor:hover{
+	cursor: pointer;
+	background-color: #3a7cc7;
+}
+
+a:hover{
+	cursor: pointer;
+}
+
+a:active .anchor{
+	background-color: transparent;
+}
+
+@media  screen and (max-width: 400px ) {
+
+	img{
+		width: 16rem;
+	}
+
+	h3{
+		font-size: 1.2rem;
+		margin-top: 2.8rem;
+	}
+
+	.slider{
+		margin-left: 8rem;
+	}
+	.slider a{
+		width: 1.5rem;
+		height: 1.5rem;
+	}
+	.slider .anchor{
+		width: 0.8rem;
+		height: 0.8rem;
+	}
+}
